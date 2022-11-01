@@ -6,24 +6,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyAir</title>
     <link rel="stylesheet" href="index.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
 
-    <div class="flex-container" id="first-container">
+    <div id="father-container">
+        <div class="flex-container" id="first-container">
+            
+            <div class="flex-child">
+                <img 
+                    src="https://assets.airtickets.com/images/airtickets/square-logo.png" 
+                    width="150" 
+                    height="150">
+            </div>
+            
+            <div class="flex-child" id="myHeader">
+            
+                <h1>MyAir</h1>
+            
+            </div>
         
-        <div class="flex-child">
-            <img 
-                src="https://assets.airtickets.com/images/airtickets/square-logo.png" 
-                width="150" 
-                height="150">
         </div>
-        
-        <div class="flex-child">
-        
-            <h1 id="myHeader">MyAir</h1>
-        
+
+        <div class="flex-container" id="second-container">
+            <div class="flex-child" id="tripTypeSel">
+            
+                <input type="radio" id="roundtrip" 
+                    name="roundnot" value="Round Trip"
+                    checked="checked">
+                <label for="roundtrip">
+                    Round Trip
+                </label>
+                
+                <input type="radio" id="oneway" 
+                    name="roundnot" value="One Way">
+                <label for="oneway">
+                    One Way
+                </label><br>
+            
+            </div>
         </div>
-    
+
+        <div  class="flex-container">
+
+            <div id="form-arguments">
+
+                <div>
+
+                    <label for="from">From:</label>
+                    <input type="text" id="from" name="from" placeholder="City or Airport">
+
+                    <label for="to">To:</label>
+                    <input type="text" id="to" name="to" placeholder="City or Airport">
+                    <br>
+
+                    <label for="depart">Depart:</label>
+                    <input type="text" id="depart" name="depart" placeholder="City or Airport">
+
+                    <label for="return">Return:</label>
+                    <input type="text" id="return" name="return" placeholder="City or Airport">
+                    <br>
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="flex-container" id="class-search-button">
+            <div class="flex-child" id="classTypeSel">
+            
+                <input type="radio" id="economyclass" 
+                    name="econot" value="Round Trip"
+                    checked="checked">
+                <label for="economyclass">
+                    Economy Class
+                </label>
+
+                <br>
+                
+                <input type="radio" id="businessclass" 
+                    name="econot" value="One Way">
+                <label for="businessclass">
+                    Business Class
+                </label><br>
+            
+            </div>
+            <div class="flex-child" id="searchButton">
+
+                <button type="button">Search Flights</button>
+
+            </div>
+        </div>
+
+        <div class="flex-container">
+            <div class="flex-child" id="bottom-buttons">
+            
+                <button>
+
+                    <label for="e-Tickets">e-Tickets</label>
+                    <br>
+                    <i class="fa fa-ticket"></i>
+
+                </button>
+
+                <button>
+
+                    <label for="Check-in">Check-in</label>
+                    <br>
+                    <i class="fa fa-check"></i>
+
+                </button>
+
+                <button>
+
+                    <label for="Hotels">Hotels</label>
+                    <br>
+                    <i class="fa fa-hotel"></i>
+
+                </button>
+
+                <button>
+
+                    <label for="Cars">Cars</label>
+                    <br>
+                    <i class="fa fa-car"></i>
+
+                </button>
+            
+            </div>
+        </div>
+
     </div>
 
 </body>
