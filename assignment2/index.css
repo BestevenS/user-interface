@@ -1,0 +1,44 @@
+body {
+    margin-top: 50px;
+    background-color: "#D2DAED";
+    color: "#033076";
+    text-align: left;
+}
+
+#main {
+    padding-top: 100px;
+}
+
+#myHeader {
+    color: "#033076";
+    padding-top: 105px;
+    bottom: 0;
+    left: 0;
+}
+
+#first-container{
+    background-color: "#000000";
+    color: "#033076";
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.flex-container{
+    display: flex;
+}
+
+.flex-child {
+    flex: 1;
+    border: 2px solid black;
+}
+
+.flex-child img {
+    margin-left: 500px;
+    margin-right: -500px;
+    padding-right: -200px;
+    /* border: 2px solid black; */
+}
+
+/* .flex-child:first-child {
+    margin-right: 20px;
+}  */
