@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyAir</title>
     <link rel="stylesheet" href="index.css">
     
+    <script src="index.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
@@ -49,28 +51,43 @@
             </div>
         </div>
 
-        <div  class="flex-container">
+        <div class="flex-container">
 
             <div id="form-arguments">
 
-                <div>
+                <form autocomplete="off" action="/action_page.php">
+                    <div class="autocomplete" class="flex-child">
+                        
+                        <label for="from">From:</label>
+                        <input type="text" id="from" name="from" placeholder="City of Airport">
+                        <ul id="autocomplete-list">
+                            <script>
+                                autocomplete(document.getElementById("from"), countries);
+                            </script>
+                        </ul>
 
-                    <label for="from">From:</label>
-                    <input type="text" id="from" name="from" placeholder="City or Airport">
+                    </div>
 
-                    <label for="to">To:</label>
-                    <input type="text" id="to" name="to" placeholder="City or Airport">
-                    <br>
+                    <div class="autocomplete" class="flex-child">
+                        <label for="to">To:</label>
+                        <input type="text" id="to" name="to" placeholder="City of Airport">
+                        <ul id="autocomplete-list">
+                            <script>
+                                autocomplete(document.getElementById("to"), countries);
+                            </script>
+                        </ul>
+                    </div>
 
                     <label for="depart">Depart:</label>
-                    <input type="text" id="depart" name="depart" placeholder="City or Airport">
+                    <input type="date" id="depart" name="depart">
 
-                    <label for="return">Return:</label>
-                    <input type="text" id="return" name="return" placeholder="City or Airport">
                     <br>
                     
-                </div>
+                    <label for="return">Return:</label>
+                    <input type="date" id="return" name="return">
 
+                </form>
+                    
             </div>
 
         </div>
