@@ -110,3 +110,7 @@ function validateForm() {
   }
 
 }
+
+$( function() {
+  $( "#accordion" ).accordion();
+} );

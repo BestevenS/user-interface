@@ -9,8 +9,15 @@
     <title>MyAir</title>
     <link rel="stylesheet" href="index.css">
 
-    <script src="index.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+    <script src="index.js"></script>
 
 </head>
 
@@ -31,7 +38,7 @@
 
         </div>
 
-        <div class="flex-container" id="second-container">
+        <div class="flex-container">
             <div class="flex-child" id="tripTypeSel">
 
                 <input type="radio" id="roundtrip" name="roundnot" value="Round Trip" checked="checked">
@@ -51,38 +58,47 @@
 
             <form name="form" autocomplete="off" action="#" onsubmit="return validateForm()">
 
-                <div id="form-arguments">
+                <div id="accordion">
 
-                    <div class="autocomplete" class="flex-child">
+                    <h3>From/To</h3>
 
-                        <label for="from">From:</label>
-                        <input type="text" id="from" name="from" placeholder="City of Airport">
-                        <ul id="autocomplete-list">
-                            <script>
-                                autocomplete(document.getElementById("from"), countries);
-                            </script>
-                        </ul>
+                    <div>
+                        <div class="autocomplete" class="flex-child">
 
+                            <label for="from">From:</label>
+                            <input type="text" id="from" name="from" placeholder="City of Airport">
+                            <ul id="autocomplete-list">
+                                <script>
+                                    autocomplete(document.getElementById("from"), countries);
+                                </script>
+                            </ul>
+
+                        </div>
+
+                        <div class="autocomplete" class="flex-child">
+                            <label for="to">To:</label>
+                            <input type="text" id="to" name="to" placeholder="City of Airport">
+                            <ul id="autocomplete-list">
+                                <script>
+                                    autocomplete(document.getElementById("to"), countries);
+                                </script>
+                            </ul>
+                        </div>
                     </div>
 
-                    <div class="autocomplete" class="flex-child">
-                        <label for="to">To:</label>
-                        <input type="text" id="to" name="to" placeholder="City of Airport">
-                        <ul id="autocomplete-list">
-                            <script>
-                                autocomplete(document.getElementById("to"), countries);
-                            </script>
-                        </ul>
+                    <h3>Depart/Return dates</h3>
+
+                    <div>
+                        
+                        <label for="depart">Depart:</label>
+                        <input type="date" id="depart" name="depart">
+
+                        <br>
+
+                        <label for="return">Return:</label>
+                        <input type="date" id="return" name="return">
+
                     </div>
-
-                    <label for="depart">Depart:</label>
-                    <input type="date" id="depart" name="depart">
-
-                    <br>
-
-                    <label for="return">Return:</label>
-                    <input type="date" id="return" name="return">
-
                 </div>
 
                 <div class="flex-container">
