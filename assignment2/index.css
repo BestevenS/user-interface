@@ -43,27 +43,20 @@ body {
 }
 
 #tripTypeSel {
-    padding-left: 510px;
-    padding-top: 5px
-}
-
-#accordion{
-    padding-left: 90px;
-    padding-top: 40px
+    padding-left: 450px;
 }
 
 #accordion {
     padding-left:90px;
-    padding-top: 30px;
+    padding-top: 0px;
 }
 
 #accordion label {
-    padding-top: 10px;
+    padding-top: 30px;
     text-shadow: 2px 8px 7px #033076;
     width:75px;
     display:inline-block;
     border-bottom: 1px solid gray;
-    margin-bottom: 20px;
 }
 
 #accordion input {
@@ -101,7 +94,7 @@ body {
 
 #bottom-buttons {
     padding-left: 90px;
-    padding-top: 115px;
+    padding-top: 55px;
 }
 
 #bottom-buttons button {
