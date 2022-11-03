@@ -95,3 +95,18 @@ function autocomplete(inp, arr) {
       closeAllLists(e.target);
   });
 }
+
+
+function validateForm() {
+  var fromContent = document.forms["form"]["from"].value;
+  var toContent = document.forms["form"]["to"].value;
+  var departDateContent = document.forms["form"]["depart"].value;
+  var returnDateContent = document.forms["form"]["return"].value;
+
+  console.log("from is empty");
+  if (fromContent == "" || toContent == "" || departDateContent == "" || returnDateContent == "") {
+    alert("All values must be filled out");
+    return false;
+  }
+
+}

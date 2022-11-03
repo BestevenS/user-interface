@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <meta charset="UTF-8">
@@ -7,57 +8,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyAir</title>
     <link rel="stylesheet" href="index.css">
-    
+
     <script src="index.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
+
 <body>
 
     <div id="father-container">
         <div class="flex-container" id="first-container">
-            
+
             <div class="flex-child">
-                <img 
-                    src="https://assets.airtickets.com/images/airtickets/square-logo.png" 
-                    width="150" 
-                    height="150">
+                <img src="https://assets.airtickets.com/images/airtickets/square-logo.png" width="150" height="150">
             </div>
-            
+
             <div class="flex-child" id="myHeader">
-            
+
                 <h1>MyAir</h1>
-            
+
             </div>
-        
+
         </div>
 
         <div class="flex-container" id="second-container">
             <div class="flex-child" id="tripTypeSel">
-            
-                <input type="radio" id="roundtrip" 
-                    name="roundnot" value="Round Trip"
-                    checked="checked">
+
+                <input type="radio" id="roundtrip" name="roundnot" value="Round Trip" checked="checked">
                 <label for="roundtrip">
                     Round Trip
                 </label>
-                
-                <input type="radio" id="oneway" 
-                    name="roundnot" value="One Way">
+
+                <input type="radio" id="oneway" name="roundnot" value="One Way">
                 <label for="oneway">
                     One Way
                 </label><br>
-            
+
             </div>
         </div>
 
         <div class="flex-container">
 
-            <div id="form-arguments">
+            <form name="form" autocomplete="off" action="#" onsubmit="return validateForm()">
 
-                <form autocomplete="off" action="/action_page.php">
+                <div id="form-arguments">
+
                     <div class="autocomplete" class="flex-child">
-                        
+
                         <label for="from">From:</label>
                         <input type="text" id="from" name="from" placeholder="City of Airport">
                         <ul id="autocomplete-list">
@@ -82,45 +79,46 @@
                     <input type="date" id="depart" name="depart">
 
                     <br>
-                    
+
                     <label for="return">Return:</label>
                     <input type="date" id="return" name="return">
 
-                </form>
-                    
-            </div>
+                </div>
 
-        </div>
+                <div class="flex-container">
 
-        <div class="flex-container" id="class-search-button">
-            <div class="flex-child" id="classTypeSel">
-            
-                <input type="radio" id="economyclass" 
-                    name="econot" value="Round Trip"
-                    checked="checked">
-                <label for="economyclass">
-                    Economy Class
-                </label>
+                    <div class="flex-child" id="classTypeSel">
 
-                <br><br>
-                
-                <input type="radio" id="businessclass" 
-                    name="econot" value="One Way">
-                <label for="businessclass">
-                    Business Class
-                </label><br>
-            
-            </div>
-            <div class="flex-child" id="searchButton">
+                        <input type="radio" id="economyclass" name="econot" value="Round Trip" checked="checked">
+                        <label for="economyclass">
+                            Economy Class
+                        </label>
 
-                <button type="button">Search Flights</button>
+                        <br><br>
 
-            </div>
+                        <input type="radio" id="businessclass" name="econot" value="One Way">
+                        <label for="businessclass">
+                            Business Class
+                        </label><br>
+
+                    </div>
+
+                    <div class="flex-child" id="searchButton">
+
+                        <button type="submit" value="Submit">Search Flights</button>
+
+                    </div>
+
+                </div>
+
+
+            </form>
+
         </div>
 
         <div class="flex-container">
             <div class="flex-child" id="bottom-buttons">
-            
+
                 <button>
 
                     <label for="e-Tickets">e-Tickets</label>
@@ -152,11 +150,12 @@
                     <i class="fa fa-car"></i>
 
                 </button>
-            
+
             </div>
         </div>
 
     </div>
 
 </body>
+
 </html>
