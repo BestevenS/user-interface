@@ -10,18 +10,22 @@
 3.	Έχω ένα δικό μου trip.sql αρχείο, σε περίπτωση που έχετε άλλα 
     ονόματα στα columns και δεν σας παίζει
 
+4.  Εάν θέλετε μπορείτε για τα posts των users & trips να χρησιμοποιήσετε
+    τα 2 JSONs που εχω φτιάξει στον φάκελο root(/) φακελο του zip
+
 Σε αυτό το σημείο η βάση είναι έτοιμη για να δεχθεί κάθε crud μέθοδο
 
-● GET /api/v1/users
-● POST /api/v1/users
-● GET /api/v1/users/{userId}
-● PUT /api/v1/users/{userId}
-● DELETE /api/v1/users/{userId}
-● GET /api/v1/trips
-● POST /api/v1/trips
-● GET /api/v1/trips/{tripID}
-● PUT /api/v1/trips/{tripID}
-● DELETE /api/v1/trips/{tripID}
+● GET       /api/v1/users              localhost:8080/users
+● POST      /api/v1/users              localhost:8080/users
+● GET       /api/v1/users/{userId}     localhost:8080/users/1
+● PUT       /api/v1/users/{userId}     localhost:8080/users/1
+● DELETE    /api/v1/users/{userId}     localhost:8080/users/1
+
+● GET       /api/v1/trips              localhost:8080/trips
+● POST      /api/v1/trips              localhost:8080/trips
+● GET       /api/v1/trips/{tripID}     localhost:8080/trips/1
+● PUT       /api/v1/trips/{tripID}     localhost:8080/trips/1
+● DELETE    /api/v1/trips/{tripID}     localhost:8080/trips/1
 
 
 Καλή συνέχεια και καλές γιορτές
