@@ -4,9 +4,9 @@ CREATE DATABASE `trip`;
 
 USE `trip`;
 
-CREATE TABLE `user` (
+CREATE TABLE `users` (
 
-    id INT NOT NULL AUTO_INCREMENT,
+    userId INT NOT NULL AUTO_INCREMENT,
     username VARCHAR(255) NOT NULL,
     pwd VARCHAR(255) NOT NULL,
     firstname VARCHAR(255) NOT NULL,
@@ -19,11 +19,11 @@ CREATE TABLE `user` (
     birthDate DATE NOT NULL,
     sex VARCHAR(255) NOT NULL,
 
-    PRIMARY KEY (id)
+    PRIMARY KEY (userId)
 
 );
 
-CREATE TABLE `tripEntity` (
+CREATE TABLE `trips` (
     
     tripID INT NOT NULL AUTO_INCREMENT,
     fromCity VARCHAR(255) NOT NULL,

@@ -1,13 +1,13 @@
 {
     "username": "Besteven",
-    "pwd": "password",
+    "pwd": "pass12345",
     "firstname": "Stefanos",
     "lastname": "Chidiroglou",
     "street": "Gianni Athitaki",
     "city": "Herakleion",
     "postalCode": "71410",
     "country": "Greece",
-    "phoneNumber": "6955555546",
+    "tel": "6955555546",
     "birthDate": "1997-08-26",
     "sex": "man"
 }

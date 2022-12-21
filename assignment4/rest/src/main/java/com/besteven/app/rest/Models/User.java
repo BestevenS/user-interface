@@ -12,7 +12,7 @@ public class User {
     // all variables and their getters & setters
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private long userId;
     @Column
     private String username;
     @Column
@@ -36,12 +36,12 @@ public class User {
     @Column
     private String sex;
 
-    public long getId() {
-        return id;
+    public long getUserId() {
+        return userId;
     }
 
-    public void setId(long id) {
-        this.id = id;
+    public void setUserId(long userId) {
+        this.userId = userId;
     }
 
     public String getUsername() {
