@@ -1,0 +1,118 @@
+body {
+    background-color: #D2DAED;
+    color: #033076;
+    text-align: left;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#father-container{
+    margin-top: 50px;
+    margin-left: 500px;
+    margin-right: 500px;
+    background-color: white;
+    color: "#033076";
+}
+
+/* #first-container{
+    background-color: white;
+    color: "#033076";
+} */
+
+#myHeader {
+    color: #033076;
+    padding-top: 105px;
+    margin-left: -220px;
+    color: "#ffffff";
+    padding-top: 135px;
+    padding-right: 180px;
+    font-size: 17px;
+}
+
+.flex-child img {
+    padding-top: 50px;
+    padding-left: 90px;
+}
+
+.flex-container{
+    display: flex;
+}
+
+.flex-child {
+    flex: 1;
+}
+
+#tripTypeSel {
+    padding-left: 450px;
+}
+
+#accordion {
+    padding-left:90px;
+    padding-top: 0px;
+}
+
+#accordion label {
+    padding-top: 30px;
+    text-shadow: 2px 8px 7px #033076;
+    width:75px;
+    display:inline-block;
+    border-bottom: 1px solid gray;
+}
+
+#accordion input {
+    text-align: right;
+    border: 0px;
+    font-size: 20px;
+    border-bottom: 1px solid gray;
+}
+
+#classTypeSel {
+    width: 300px;
+    padding-top: 20px;
+    padding-left:90px;
+}
+
+#searchButton {
+    text-align: right;
+    padding-left: 250px;
+    padding-top: 30px;
+}
+
+#searchButton button:hover {
+    background-color: white;
+    color: #033076;
+}
+
+#searchButton button {
+    background-color: #033076;
+    color: white;
+    border: 0px;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+#bottom-buttons {
+    padding-left: 90px;
+    padding-top: 55px;
+}
+
+#bottom-buttons button {
+    text-shadow: 2px 8px 7px #033076;
+    color: #033076;
+    background-color: white;
+    height: 100px;
+    width: 172px;
+    border-bottom: 0px;
+    font-size: 28px;
+}
+
+#bottom-buttons i {
+    padding-top: 10px;
+    font-size: 30px;
+}
+
+#bottom-buttons button:hover {
+    background-color: #033076;
+    color: white;
+}
